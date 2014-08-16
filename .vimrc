@@ -94,3 +94,29 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+" Store backup files in a tmp directory
+set backupdir=~/tmp
+
+"Disable (visual) word wrapping for long lines
+set nowrap
+
+" Highlight long lines
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+1match OverLength /\%81v.\+/
+
+" Highlight trailing whitespaces
+highlight ExtraWhitespace ctermbg=darkred ctermfg=white guibg=#FFD9D9
+2match ExtraWhitespace /\s\+$\| \+\ze\t/
+"
+" Highlight unneeded blank lines
+highlight BlankLines ctermbg=darkred ctermfg=white guibg=#FFD9D9
+3match BlankLines /^$\n\{2,}/
+
+" wild matching for command and filename completion
+set wildmenu
+set wildmode=longest:full,full
+
+" Center the search result when searching for the next or previous match
+map N Nzz
+map n nzz
