@@ -102,8 +102,8 @@ set backupdir=~/tmp
 set nowrap
 
 " Highlight long lines
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-1match OverLength /\%81v.\+/
+"highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+"1match OverLength /\%81v.\+/
 
 " Highlight trailing whitespaces
 highlight ExtraWhitespace ctermbg=darkred ctermfg=white guibg=#FFD9D9
