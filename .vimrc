@@ -101,17 +101,13 @@ set backupdir=~/tmp
 "Disable (visual) word wrapping for long lines
 set nowrap
 
-" Highlight long lines
-"highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-"1match OverLength /\%81v.\+/
-
 " Highlight trailing whitespaces
 highlight ExtraWhitespace ctermbg=darkred ctermfg=white guibg=#FFD9D9
-2match ExtraWhitespace /\s\+$\| \+\ze\t/
+1match ExtraWhitespace /\s\+$\| \+\ze\t/
 "
 " Highlight unneeded blank lines
 highlight BlankLines ctermbg=darkred ctermfg=white guibg=#FFD9D9
-3match BlankLines /^$\n\{2,}/
+2match BlankLines /^$\n\{2,}/
 
 " wild matching for command and filename completion
 set wildmenu
@@ -120,3 +116,10 @@ set wildmode=longest:full,full
 " Center the search result when searching for the next or previous match
 map N Nzz
 map n nzz
+
+if exists('+colorcolumn')
+	highlight ColorColumn ctermbg=magenta ctermfg=red guibg=magenta guibg=red
+	set colorcolumn=80
+else
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+endif
