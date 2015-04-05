@@ -1,9 +1,2 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/mlagadapati/Builds/main_l/kernel/arch/arm64/configs'
-let g:netrw_dirhist_2='/home/mlagadapati/Builds/main_l/kernel/arch/arm64'
-let g:netrw_dirhist_3='/home/mlagadapati/Builds/rel-st8-l/kernel-shieldtablet8/security/tlk_driver'
-let g:netrw_dirhist_4='/home/mlagadapati/Builds/rel22/3rdparty/ote/tlk/lib/debug'
-let g:netrw_dirhist_5='/home/mlagadapati/Builds/rel22/3rdparty/ote/lib/service'
-let g:netrw_dirhist_6='/home/mlagadapati/Builds/rel-22r2/3rdparty/ote/tlk/kernel'
-let g:netrw_dirhist_7='/home/mlagadapati/Builds/rel-22r2/vendor/nvidia/tegra/tests-kernel/linux/kernel_submit'
