@@ -8,3 +8,4 @@ plugins installed:
 2. nerdtree (https://github.com/scrooloose/nerdtree)
 3. nerdtree-tabs (https://github.com/jistr/vim-nerdtree-tabs)
 4. ctrl-p (https://github.com/kien/ctrlp.vim)
+5. vim-fugitive (git plugin) (https://github.com/tpope/vim-fugitive)
