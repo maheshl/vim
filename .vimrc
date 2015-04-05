@@ -124,8 +124,10 @@ else
 	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 endif
 
-" syntastic checks
+" use pathogen plugin manager
 execute pathogen#infect()
+
+" syntastic checks
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
