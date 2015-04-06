@@ -128,13 +128,13 @@ endif
 execute pathogen#infect()
 
 " solarized color scheme settings
-"syntax enable
 if has('gui_running')
 	set background=light
 else
 	set background=dark
 endif
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=16
+set t_Co=16
 colorscheme solarized
 
 " syntastic checks

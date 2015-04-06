@@ -10,6 +10,7 @@ plugins installed through pathogen:
 4. ctrl-p (https://github.com/kien/ctrlp.vim) - makes search easy
 5. vim-fugitive (git plugin) (https://github.com/tpope/vim-fugitive) - git integration
 6. solarized (http://ethanschoonover.com/solarized/vim-colors-solarized) - color scheme
+          Terminator is configured using https://github.com/ghuntley/terminator-solarized
 7. vim-airline (https://github.com/bling/vim-airline) --for better look -- requires patched font (https://github.com/abertsch/Menlo-for-Powerline)
 
 Manual plugins
