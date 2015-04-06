@@ -127,6 +127,16 @@ endif
 " use pathogen plugin manager
 execute pathogen#infect()
 
+" solarized color scheme settings
+"syntax enable
+if has('gui_running')
+	set background=light
+else
+	set background=dark
+endif
+"let g:solarized_termcolors=256
+colorscheme solarized
+
 " syntastic checks
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
