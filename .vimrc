@@ -101,29 +101,6 @@ set backupdir=~/tmp
 "Disable (visual) word wrapping for long lines
 set nowrap
 
-" Highlight trailing whitespaces
-highlight ExtraWhitespace ctermbg=darkred ctermfg=white guibg=#FFD9D9
-1match ExtraWhitespace /\s\+$\| \+\ze\t/
-"
-" Highlight unneeded blank lines
-highlight BlankLines ctermbg=darkred ctermfg=white guibg=#FFD9D9
-2match BlankLines /^$\n\{2,}/
-
-" wild matching for command and filename completion
-set wildmenu
-set wildmode=longest:full,full
-
-" Center the search result when searching for the next or previous match
-map N Nzz
-map n nzz
-
-if exists('+colorcolumn')
-	highlight ColorColumn ctermbg=magenta ctermfg=red guibg=magenta guibg=red
-	set colorcolumn=80
-else
-	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
-endif
-
 " use pathogen plugin manager
 execute pathogen#infect()
 
@@ -136,6 +113,32 @@ endif
 let g:solarized_termcolors=16
 set t_Co=16
 colorscheme solarized
+
+" Highlight trailing whitespaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+1match ExtraWhitespace /\s\+$\| \+\ze\t/
+"
+" Highlight unneeded blank lines
+highlight BlankLines ctermbg=red guibg=red
+2match BlankLines /^$\n\{2,}/
+
+" show tabs(note: second character is space)
+set list lcs=tab:»\ 
+
+" wild matching for command and filename completion
+set wildmenu
+set wildmode=longest:full,full
+
+" Center the search result when searching for the next or previous match
+map N Nzz
+map n nzz
+
+if exists('+colorcolumn')
+	highlight ColorColumn ctermbg=green ctermfg=black guibg=green guifg=black
+	set colorcolumn=80
+else
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+endif
 
 " syntastic checks
 set statusline+=%#warningmsg#
