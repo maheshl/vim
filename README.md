@@ -3,15 +3,14 @@ vim
 
 vim configuration files
 
-plugins installed through pathogen:
+plugins installed through pathogen: (install plugins through clone_bundles.sh)
 1. syntastic (https://github.com/scrooloose/syntastic) - syntax check
 2. nerdtree (https://github.com/scrooloose/nerdtree) - tree view 
-3. nerdtree-tabs (https://github.com/jistr/vim-nerdtree-tabs) - tree view, used in conjuction with nerdtree
-4. ctrl-p (https://github.com/kien/ctrlp.vim) - makes search easy
-5. vim-fugitive (git plugin) (https://github.com/tpope/vim-fugitive) - git integration
-6. solarized (http://ethanschoonover.com/solarized/vim-colors-solarized) - color scheme
+3. ctrl-p (https://github.com/kien/ctrlp.vim) - makes search easy
+4. vim-fugitive (git plugin) (https://github.com/tpope/vim-fugitive) - git integration
+5. solarized (http://ethanschoonover.com/solarized/vim-colors-solarized) - color scheme
           Terminator is configured using https://github.com/ghuntley/terminator-solarized
-7. vim-airline (https://github.com/bling/vim-airline) --for better look -- requires patched font (https://github.com/abertsch/Menlo-for-Powerline)
+6. vim-airline (https://github.com/bling/vim-airline) --for better look -- requires patched font (https://github.com/abertsch/Menlo-for-Powerline)
 
 Manual plugins
 1. ctags
